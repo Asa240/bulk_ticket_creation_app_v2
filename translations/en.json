@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Bulk Ticket Creation App (v2 Framework)",
+    "short_description": "Quickly and easily created batches of fake Zendesk Tickets and Users",
+    "long_description": "Primarily built for testing/demoing uses",
+    "installation_instructions": "Simply click install."
+  }
+}

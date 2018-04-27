@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- http://garden.zendesk.com -->
+  <link rel="stylesheet" href="https://assets.zendesk.com/apps/sdk-assets/css/2/zendesk_garden.css" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <header>
+    <span class="logo" />
+    <!-- <h3>{{setting "name"}}</h3> -->
+  </header>
+
+<div class="form-group">
+  <label for="department">Ticket Theme:</label>
+  <select class="form-control c-txt__input c-txt__input--select" id="selDepartment">
+    <option value="1hJb2iQGRo4QaVbKnuq9v5jBrZ3sk0eYligVREV2jCrs">General / Mixed</option>
+    <option value="1Fvsr0pa5JThZ3Zvum-xuRV_JgHIeXQbwF-yf1oxX_5s">Software Company</option>
+    <option value="1ACOsBjYz4P-OvumDTGTn589oLOPhHCKeKau7-0Nx0mw">Retail Company</option>
+    <option value="1NUSB84pS2Iex06YR6bXIuROUnFNXE0sUFZLE1XeNY5M">Internal (IT & HR)</option>
+  </select>
+</div>
+<section data-main></section>
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+  </div>
+</div>
+<div class="message">
+  <center>*IMPORTANT REMINDER*</center>Before creating tickets, you may want to disable any Triggers that send automatic email notifications.  
+</div>
+<button type="button" class="c-btn btn-primary btn-block" id="createTickets">Create ~25 Random Tickets</button>
+<!-- https://github.com/zendesk/zendesk_app_framework_sdk -->
+<script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script type="text/javascript" src="csv.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script>
+    // Initialise the Zendesk JavaScript API client
+    // https://developer.zendesk.com/apps/docs/apps-v2
+    var client = ZAFClient.init();
+    client.invoke('resize', { width: '104%', min-height: '275px' });
+  </script>
+</body>
+</html>
